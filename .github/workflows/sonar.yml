@@ -23,5 +23,4 @@ jobs:
         run: mvn clean verify
 
       - name: Run SonarQube analysis
-        run: mvn sonar:sonar - name: Run SonarQube analysis
         run: mvn sonar:sonar -Dsonar.projectKey=petclinic -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} -Dsonar.token=${{ secrets.SONAR_TOKEN }}
